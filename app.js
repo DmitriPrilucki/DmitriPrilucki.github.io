@@ -14,14 +14,15 @@ let btn4 = document.getElementById("btn4");
 let btn5 = document.getElementById("btn5");
 let btn6 = document.getElementById("btn6");
 
+tg.MainButton.show();
+
 btn1.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 1!");
-		item = "1";
-		tg.MainButton.show();
+		item += 100;
 	}
 });
 
@@ -31,7 +32,7 @@ btn2.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 2!");
-		item = "2";
+		item += 200;
 		tg.MainButton.show();
 	}
 });
